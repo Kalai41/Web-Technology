@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    #flex{
+        width:100vw;
+        height:80vh;
+        background-color: gray;
+        display: flex;
+        justify-content: space-around;
+    }
+    #f1{
+       align-self: center;
+       width:49%;
+       height:97%;
+   }
+    #flex1{
+       width:49%;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+       align-items: center;
+   }
+    #f1,#f2,#f3,#f4,#f5{
+        background-color: cyan;
+    }
+   #f3,#f4{
+       width:49%;
+       height:30%;
+   }
+   #f2,#f5{
+       width:100%;
+       height:30%;
+   }
+
+</style>
+<body>
+    <div id="flex">
+        <div id="f1"></div>
+        <div id="flex1">
+            <div id="f2"></div>
+            <div id="f3"></div>
+            <div id="f4"></div>
+            <div id="f5"></div> 
+        </div>
+    </div>
+</body>
+</html>

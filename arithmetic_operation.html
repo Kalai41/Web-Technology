@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<h1 align="center">ARITHMETIC OPERATIONS</h1>
+
+</head>
+<body>
+
+<script language="javascript" type="text/javascript">
+function addition()
+	{
+		c=a+b;
+		document.getElementById("result").innerHTML="Result : The addition of "+a+" and "+b+" is : "+c;
+	}
+</script>
+
+<script language="javascript" type="text/javascript">
+function subraction()
+	{
+		c=a-b;
+		document.getElementById("result").innerHTML="Result : The subraction of "+a+" and "+b+" is : "+c;
+	}
+</script>
+<script language="javascript" type="text/javascript">
+function multiplication()
+	{
+		c=a*b;
+		document.getElementById("result").innerHTML="Result : The multiplication of "+a+" and "+b+" is : "+c;
+	}
+</script>
+<script language="javascript" type="text/javascript">
+function division()
+	{
+			c=a/b;
+			document.getElementById("result").innerHTML="Result : The division of "+a+" and "+b+" is : "+c;
+		
+	}
+</script>
+
+
+<script>
+var a= parseInt(window.prompt("Enter the first number"));
+var b=parseInt(window.prompt("Enter the second number"));
+</script>
+
+<script>
+
+document.write("Number 1 : "+a+"<br>");
+document.write("Number 2 : "+b+"<br>");
+
+</script>
+<br>
+
+<input type="button" value="ADD" onclick="addition();">
+<input type="button" value="SUB" onclick="subraction();">
+<input type="button" value="MUL" onclick="multiplication();">
+<input type="button" value="DIV" onclick="division();">
+<br>
+
+
+
+<p id="result">Result :</p>
+</body>
+</html>

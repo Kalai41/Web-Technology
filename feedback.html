@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>billing</title>
+<style>
+body {
+  background-image: url('7.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .check {
+  background-color: gray;
+}
+
+.container input:checked ~ .check {
+  background-color:blue;
+}
+
+.check:after {
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .check:after {
+  display: block;
+}
+
+.container .check:after {
+ 	top: 8px;
+	left: 8px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background:blue;
+}
+</style>
+<head><meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<header>
+	<hr color="blue"><font color="yellow">
+	<h2>Ex:3 Design a responsive website using Bootstrap.</h2></font>
+	<hr color="blue">
+</header>	
+<font face="Comic sans MS" size="5"color="black">
+<form action="thankyou.html" align="center">
+<h3><b><pre>AGRO AGENCIES</font><br><br><br><br><font face="WildWest-serif" color="yellow" size="5"><u><b> BILL STATEMENT</u>   </b> </pre></h3>
+	<font color="black">
+<table cellspading="3" cellspacing="3" border="5" width="50%" align="center" >
+<tr>
+<th ><b>Customer Name: </b><br></th>
+<th colspan="2"><input type="text" size="40" placeholder="Enter  name"></th>
+</tr>
+<br><br>
+<tr>
+<th><b>Adhar-No:</b></th>
+<th colspan="2"><input type="text" size="40" placeholder="Enter  Adhar No"></th></tr>
+<tr>
+<th><b>Phone-No: </b></th>
+<th colspan="2"><input type="text" size="12" placeholder="Enter  Phone no"></th></tr>
+<br><tr><th><b>Fertilizer name:</b></th>
+<th colspan="2">
+<select name="Fertilizer Name"  id="st"  size="1" >
+
+		<option> UREA</delhi>
+		<option>FACT 20*20</option>
+		<option >POTASH</option>
+		<option >CALSIUM NITRATE</option>
+		<option>POTASIUM NITRATE</option>	
+		<option>17*17*17</option>		
+		</select></th></tr>
+<th><b>No.Of.Quantity :</b></th>
+<th><input type="text" size="40" placeholder="Enter  Qty"><br><br></th>
+<th><input type="text" size="10" placeholder="Amount"></th>
+</tr>
+<br><tr><th><font color="black"><b>Fertilizer name:</b></th>
+<th colspan="2">
+<select name="Fertilizer Name"  id="st"  size="1" >
+
+		<option> UREA</delhi>
+		<option>FACT 20*20</option>
+		<option >POTASH</option>
+		<option >CALSIUM NITRATE</option>
+		<option>POTASIUM NITRATE</option>	
+		<option>17*17*17</option>		
+		</select></th>
+</tr>
+<th><b>No.Of.Quantity:</b></th>
+<th><input type="text" size="40" placeholder="Enter  Qty"><br><br>
+<th><input type="text" size="10" placeholder="Amount"></th>
+</tr>
+<br>
+<tr><th><font color="black"><b>Fertilizer name:</b></th>
+<th colspan="2">
+<select name="Fertilizer Name"  id="st"  size="1" >
+
+		<option> UREA</delhi>
+		<option>FACT 20*20</option>
+		<option >POTASH</option>
+		<option >CALSIUM NITRATE</option>
+		<option>POTASIUM NITRATE</option>	
+		<option>17*17*17</option>		
+		</select></th></tr>
+<tr>
+<th><font color="black"><b>No.Of.Quantity: </b></th>
+<th><input type="text" size="40" placeholder="Enter  Qty"><br><br></th>
+<th><input type="text" size="10" placeholder="Amount"></th>
+</tr>
+<tr>
+<th><font color="black"><b>Total Amount:</b></th>
+<th colspan="2"><input type="text" size="40" placeholder="Amount"></th></tr>
+<tr>
+	<font color="black" size="5">
+<th rowspan="3">Payment Mode:<br></th>
+	<th><label class="container">Cash
+		<input type="radio" name="radio" checked>
+		<span class="check"></span>
+	  	</label>
+	
+	  <label class="container">PhonePay
+		<input type="radio" name="radio">
+		<span class="check"></span>
+	  </label>
+			<label class="container">GooglePay
+			<input type="radio" name="radio">
+			<span class="check"></span>
+	  </label>
+	  <label class="container">NetBanking
+		<input type="radio" name="radio">
+		<span class="check"></span>
+	  </label>
+	  </th>  
+</table>
+</form>
+
+<br><br>	
+<br>
+<pre>  <a href="thankyou.html"> <input type ="submit" value="submit"> <input type="reset" value="reset"></a></pre>
+</form>
+<footer>
+	<pre>																													designed by Kalaiyarasi@18ITR041</pre>
+</footer>
+</body>
+</html>
